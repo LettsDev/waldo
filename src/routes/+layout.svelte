@@ -11,20 +11,21 @@
 	];
 </script>
 
-<heading class=" mb-2 flex justify-between px-3 pt-1 font-Rubik">
-	<div class="flex items-baseline">
-		<h1 class="  text-5xl font-bold">
-			<span class="text-where">Where's</span> <span class="text-waldo">Waldo</span>
-			<span>
-				<img src={smWaldo} alt="waldo's head" class="inline h-11 pb-2" />
-			</span>
-		</h1>
+<heading class=" mb-1 flex h-fit justify-between px-3 pt-1 font-Rubik">
+	<div class="flex w-1/2 flex-wrap items-baseline text-4xl font-medium">
+		<span class="  mr-2 text-where">Where's</span>
+		<div class="">
+			<span class=" text-waldo">Waldo</span>
+			<img src={smWaldo} alt="waldo's head" class="mb-4 inline h-8" />
+		</div>
 	</div>
-	<nav class="ml-4 flex flex-wrap items-end">
+	<nav class=" mt-2 flex flex-wrap">
 		{#each navLinks as navlink (navlink.address)}
 			<a
 				href={navlink.address}
-				class={$page.url.pathname === navlink.address ? 'text-waldo' : 'hover:text-where'}
+				class={$page.url.pathname === navlink.address
+					? ' mr-2 text-waldo'
+					: 'mr-2 hover:text-where'}
 				>{navlink.text}
 			</a>
 		{/each}

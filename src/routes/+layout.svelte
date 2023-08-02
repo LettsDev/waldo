@@ -11,15 +11,16 @@
 	];
 </script>
 
-<heading class=" flex justify-between px-3 font-Rubik">
+<heading class=" mb-2 flex justify-between px-3 pt-1 font-Rubik">
 	<div class="flex items-baseline">
 		<h1 class="  text-5xl font-bold">
 			<span class="text-where">Where's</span> <span class="text-waldo">Waldo</span>
+			<span>
+				<img src={smWaldo} alt="waldo's head" class="inline h-11 pb-2" />
+			</span>
 		</h1>
-
-		<img src={smWaldo} alt="waldo's head" class="max-h-24" />
 	</div>
-	<nav class="flex items-end space-x-4 text-xl">
+	<nav class="ml-4 flex flex-wrap items-end">
 		{#each navLinks as navlink (navlink.address)}
 			<a
 				href={navlink.address}
@@ -32,7 +33,7 @@
 
 <slot />
 
-<footer class=" flex items-center justify-end pr-3">
+<footer class=" my-2 flex items-center justify-end pr-3 font-Roboto font-medium">
 	<a href="https://github.com/LettsDev" class="flex">
 		<p class="mr-2">LettsDev 2023</p>
 		<img src={githubLogo} alt="github" class="max-h-6" />

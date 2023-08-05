@@ -3,7 +3,6 @@
 	import '../app.css';
 	import { smWaldo, githubLogo } from '$lib';
 
-	console.log($page.url.pathname);
 	const navLinks = [
 		{ address: '/', text: 'Home' },
 		{ address: '/scene', text: 'Scene Select' },

@@ -103,22 +103,26 @@ const scenes: SceneData[] = [
 			{
 				fullPic: waldo,
 				name: 'waldo',
-				smallPic: smWaldo
+				smallPic: smWaldo,
+				isFound: false
 			},
 			{
 				fullPic: wilma,
 				name: 'wilma',
-				smallPic: smWilma
+				smallPic: smWilma,
+				isFound: false
 			},
 			{
 				fullPic: whitebeard,
 				name: 'whitebeard',
-				smallPic: smWhitebeard
+				smallPic: smWhitebeard,
+				isFound: false
 			},
 			{
 				fullPic: odlaw,
 				name: 'odlaw',
-				smallPic: smOdlaw
+				smallPic: smOdlaw,
+				isFound: false
 			}
 		]
 	},
@@ -132,12 +136,14 @@ const scenes: SceneData[] = [
 			{
 				fullPic: waldo,
 				name: 'waldo',
-				smallPic: smWaldo
+				smallPic: smWaldo,
+				isFound: false
 			},
 			{
 				fullPic: wilma,
 				name: 'wilma',
-				smallPic: smWilma
+				smallPic: smWilma,
+				isFound: false
 			}
 		]
 	},
@@ -151,12 +157,14 @@ const scenes: SceneData[] = [
 			{
 				fullPic: waldo,
 				name: 'waldo',
-				smallPic: smWaldo
+				smallPic: smWaldo,
+				isFound: false
 			},
 			{
 				fullPic: wilma,
 				name: 'wilma',
-				smallPic: smWilma
+				smallPic: smWilma,
+				isFound: false
 			}
 		]
 	},
@@ -170,22 +178,26 @@ const scenes: SceneData[] = [
 			{
 				fullPic: waldo,
 				name: 'waldo',
-				smallPic: smWaldo
+				smallPic: smWaldo,
+				isFound: false
 			},
 			{
 				fullPic: wilma,
 				name: 'wilma',
-				smallPic: smWilma
+				smallPic: smWilma,
+				isFound: false
 			},
 			{
 				fullPic: whitebeard,
 				name: 'whitebeard',
-				smallPic: smWhitebeard
+				smallPic: smWhitebeard,
+				isFound: false
 			},
 			{
 				fullPic: odlaw,
 				name: 'odlaw',
-				smallPic: smOdlaw
+				smallPic: smOdlaw,
+				isFound: false
 			}
 		]
 	}

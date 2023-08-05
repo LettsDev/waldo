@@ -11,10 +11,11 @@ type SceneType = 'beach' | 'hollywood' | 'space' | 'track';
 
 type CharacterType = 'waldo' | 'wilma' | 'whitebeard' | 'odlaw';
 
-export interface CharacterData {
+export interface CharacterDataInterface {
 	name: CharacterType;
 	fullPic: string;
 	smallPic: string;
+	isFound: boolean;
 }
 
 export interface SceneData {
@@ -22,7 +23,7 @@ export interface SceneData {
 	alt: string;
 	smallImg: string;
 	title: string;
-	characters: CharacterData[];
+	characters: CharacterDataInterface[];
 	scene: SceneType;
 }
 

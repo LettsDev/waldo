@@ -7,9 +7,9 @@ export interface CharacterCoords {
 	character: CharacterType;
 }
 
-type SceneType = 'beach' | 'hollywood' | 'space' | 'track';
+export type SceneType = 'beach' | 'hollywood' | 'space' | 'track';
 
-type CharacterType = 'waldo' | 'wilma' | 'whitebeard' | 'odlaw';
+export type CharacterType = 'waldo' | 'wilma' | 'whitebeard' | 'odlaw';
 
 export interface CharacterDataInterface {
 	name: CharacterType;

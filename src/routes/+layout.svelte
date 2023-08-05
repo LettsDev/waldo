@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import '../app.css';
 	import { smWaldo, githubLogo } from '$lib';
-
 	const navLinks = [
 		{ address: '/', text: 'Home' },
 		{ address: '/scene', text: 'Scene Select' },

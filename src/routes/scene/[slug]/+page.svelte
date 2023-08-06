@@ -144,6 +144,10 @@
 		const copy = $characters;
 		copy.forEach((char) => (char.isFound = false));
 		$characters = copy;
+		startTime = new Date().getTime();
+		currentTime = new Date().getTime();
+		timer = timerComponent.start();
+		dialog.close();
 	}
 </script>
 
@@ -164,7 +168,9 @@
 	{/each}
 	<dialog bind:this={dialog} class="top-1/3 rounded p-3">
 		<h1 class="font-medium">Congratulations!</h1>
+
 		<div class="flex gap-2">
+			<p>You finished in</p>
 			{#if currentTimeMinutes > 0}
 				<p class={currentTimeMinutes > 0 ? 'visible' : 'invisible'}>
 					{`${currentTimeMinutes} min`}

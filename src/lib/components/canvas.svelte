@@ -26,7 +26,7 @@
 		};
 	}
 
-	function getClientDimensions() {
+	export function getClientDimensions() {
 		return {
 			clientWidth: canvas.clientWidth,
 			clientHeight: canvas.clientHeight
@@ -59,7 +59,7 @@
 		const { canvasWidth, canvasHeight } = getDimensions();
 		const { clientWidth, clientHeight } = getClientDimensions();
 
-		//positioning with canvas scaling - used for checking if character was clicked on
+		//positioning with canvas scaling
 		let canvasX = (mouseX * canvasWidth) / clientWidth;
 		let canvasY = (mouseY * canvasHeight) / clientHeight;
 
@@ -78,8 +78,8 @@
 			selectionBoxHeight,
 			xCoord,
 			yCoord,
-			canvasX,
-			canvasY
+			mouseX,
+			mouseY
 		};
 	}
 	export function drawBox(clientX: number, clientY: number, image: HTMLImageElement) {

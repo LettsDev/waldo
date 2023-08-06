@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let startTime: number;
-	let currentTime: number;
+	export let startTime: number;
+	export let currentTime: number;
 	$: currentTimeSeconds = Math.floor((timeElapsed % (1000 * 60)) / 1000);
 	$: currentTimeMinutes = Math.floor((timeElapsed % (1000 * 60 * 60)) / (1000 * 60));
 	$: timeElapsed = currentTime - startTime;

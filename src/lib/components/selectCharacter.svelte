@@ -10,7 +10,7 @@
 <div
 	class={`character-select absolute ${
 		showCharacters ? 'visible' : 'invisible'
-	} rounded-xl bg-white hover:cursor-pointer hover:bg-waldo`}
+	} rounded-xl bg-waldo hover:cursor-pointer hover:bg-where`}
 	bind:this={containerElement}
 	on:click
 >

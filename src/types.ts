@@ -3,8 +3,7 @@ export interface CharacterCoords {
 	yBottom: number;
 	xLeft: number;
 	xRight: number;
-	scene: SceneType;
-	character: CharacterType;
+	name: CharacterType;
 }
 
 export type SceneType = 'beach' | 'hollywood' | 'space' | 'track';

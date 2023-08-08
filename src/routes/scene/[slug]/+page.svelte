@@ -3,6 +3,7 @@
 	import { onMount, onDestroy, setContext } from 'svelte';
 	import type { PageData } from './$types';
 	export let data: PageData;
+	import { goto } from '$app/navigation';
 	const characters = writable(data.scene.characters);
 	setContext('characters', characters);
 	import Canvas from '$lib/components/canvas.svelte';
@@ -12,6 +13,7 @@
 	import type { CharacterCoords, CharacterDataInterface } from '../../../types';
 	import { getDocument, save } from '$lib/dbController';
 	import OverlayCharacter from '$lib/components/overlayCharacter.svelte';
+	import type { formatPostcssSourceMap } from 'vite';
 	let startTime: number;
 	let currentTime: number;
 	$: currentTimeSeconds = Math.floor((timeElapsed % (1000 * 60)) / 1000);
@@ -133,20 +135,21 @@
 				});
 				dialog.close();
 				//redirect to leader board
+				goto('/leaderboard');
 			}
 		}
 	}
 
 	function onTryAgain() {
-		//reset the scene
-
 		//set all characters back to not found
 		const copy = $characters;
 		copy.forEach((char) => (char.isFound = false));
 		$characters = copy;
+		//reset timer
 		startTime = new Date().getTime();
 		currentTime = new Date().getTime();
 		timer = timerComponent.start();
+
 		dialog.close();
 	}
 </script>

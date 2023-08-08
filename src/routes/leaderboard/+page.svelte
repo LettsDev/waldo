@@ -3,15 +3,16 @@
 	import type { SceneType } from '../../types';
 	import type { PageData } from './$types';
 
-	//load in leaderboard scores from db
 	export let data: PageData;
+
 	const scores = data.scores;
 	const scenes: SceneType[] = ['beach', 'hollywood', 'space', 'track'];
+	const tableTitles: string[] = ['at the beach', 'hollywood', 'in space', 'track and field'];
 </script>
 
-<main class="flex flex-col items-center gap-3 px-4 py-2">
-	{#each scenes as scene}
-		{@const scenedata = scores.filter((score) => score.scene === scene)}
-		<Scoreboard {scene} scores={scenedata} />
+<main class="flex flex-col gap-3 px-3 py-2">
+	{#each scenes as scene, index}
+		{@const sceneData = scores.filter((score) => score.scene === scene)}
+		<Scoreboard title={tableTitles[index]} scores={sceneData} />
 	{/each}
 </main>

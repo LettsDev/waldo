@@ -10,20 +10,18 @@
 </script>
 
 <heading class=" mb-1 flex h-fit justify-between px-3 pt-1 font-Rubik">
-	<div class="flex w-1/2 flex-wrap items-baseline text-4xl font-medium">
+	<div class="flex flex-wrap items-baseline text-4xl font-medium">
 		<span class="  mr-2 text-where">Where's</span>
 		<div class="">
 			<span class=" text-waldo">Waldo</span>
 			<img src={smWaldo} alt="waldo's head" class="mb-4 inline h-8" />
 		</div>
 	</div>
-	<nav class=" mt-2 flex flex-wrap">
+	<nav class=" mt-2 flex flex-wrap gap-x-2">
 		{#each navLinks as navlink (navlink.address)}
 			<a
 				href={navlink.address}
-				class={$page.url.pathname === navlink.address
-					? ' mr-2 text-waldo'
-					: 'mr-2 hover:text-where'}
+				class={$page.url.pathname === navlink.address ? ' text-waldo' : ' hover:text-where'}
 				>{navlink.text}
 			</a>
 		{/each}

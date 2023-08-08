@@ -31,7 +31,7 @@
 <slot />
 
 <footer class=" my-2 flex items-center justify-end pr-3 font-Roboto font-medium">
-	<a href="https://github.com/LettsDev" class="flex">
+	<a href="https://github.com/LettsDev/waldo" class="flex">
 		<p class="mr-2">LettsDev 2023</p>
 		<img src={githubLogo} alt="github" class="max-h-6" />
 	</a>

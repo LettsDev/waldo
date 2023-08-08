@@ -3,7 +3,9 @@
 	export let data: PageData;
 </script>
 
-<main class="flex flex-col items-center space-y-2 px-4 font-Rubik">
+<main
+	class="flex flex-col items-center space-y-2 px-4 font-Rubik md:flex-row md:flex-wrap md:justify-center"
+>
 	{#each data.scenes as scene}
 		<div class="relative hover:cursor-pointer hover:opacity-80">
 			<a href={`/scene/${scene.scene}`}>

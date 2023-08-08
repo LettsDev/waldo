@@ -13,7 +13,6 @@
 	import type { CharacterCoords, CharacterDataInterface } from '../../../types';
 	import { getDocument, save } from '$lib/dbController';
 	import OverlayCharacter from '$lib/components/overlayCharacter.svelte';
-	import type { formatPostcssSourceMap } from 'vite';
 	let startTime: number;
 	let currentTime: number;
 	$: currentTimeSeconds = Math.floor((timeElapsed % (1000 * 60)) / 1000);

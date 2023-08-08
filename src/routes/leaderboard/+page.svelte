@@ -13,6 +13,7 @@
 <main class="flex flex-col gap-3 px-3 py-2">
 	{#each scenes as scene, index}
 		{@const sceneData = scores.filter((score) => score.scene === scene)}
-		<Scoreboard title={tableTitles[index]} scores={sceneData} />
+		{@const sortedData = sceneData.sort((a, b) => a.durationInSeconds - b.durationInSeconds)}
+		<Scoreboard title={tableTitles[index]} scores={sortedData} />
 	{/each}
 </main>

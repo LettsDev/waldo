@@ -20,7 +20,7 @@ A picture-tagging app where users are tasked with finding characters within a cr
 <img  src="/src/lib/assets/IMG_6749.jpg" alt="mobile leaderboard" width=30%/>
 <img  src="/src/lib/assets/IMG_6750.jpg" alt="mobile scene" width=30%/>
 
-##:hammer_and_wrench: Stack
+## :hammer_and_wrench: Stack
 
 - SvelteKit
 - Vite
